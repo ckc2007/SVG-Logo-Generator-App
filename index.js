@@ -8,14 +8,13 @@ const generateTemplate = require("./template");
 const questions = [
   {
     type: "input",
-    name: "name",
-    message: "enter up to three characters for the name:",
+    name: "text",
+    message: "Enter up to three text characters to display:",
   },
   {
     type: "input",
-    name: "text color",
-    message:
-      "what color do you want the text to be (enter a color keyword or a hexadecimal number):",
+    name: "textColor",
+    message: "Enter the text color (e.g. white, red, #FF0000):",
   },
   {
     type: "list",
@@ -25,9 +24,8 @@ const questions = [
   },
   {
     type: "input",
-    name: "shape color",
-    message:
-      "what color do you want the shape to be (please enter a color keyword or a hexadecimal number):",
+    name: "shapeColor",
+    message: "Enter the shape color (e.g. yellow, purple, #0000FF):",
   },
 ];
 
