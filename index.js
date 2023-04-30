@@ -10,6 +10,11 @@ const questions = [
     type: "input",
     name: "text",
     message: "Enter up to three text characters to display:",
+    validate: function (input) {
+      return input.length <= 3
+        ? true
+        : "Please enter up to three characters only";
+    },
   },
   {
     type: "input",
