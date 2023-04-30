@@ -49,3 +49,5 @@ function init() {
   });
 }
 
+// call to initialize app
+init();
