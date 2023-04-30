@@ -40,7 +40,7 @@ function init() {
   inquirer.prompt(questions).then((data) => {
     const filledTemplate = generateTemplate(data);
 
-    const fileName = `examples/log.svg`;
+    const fileName = `examples/logo.svg`;
     writeToFile(fileName, filledTemplate, (err) =>
       err ? console.error(err) : console.log("Success! Generated logo.svg")
     );
