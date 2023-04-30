@@ -37,7 +37,7 @@ const questions = [
 // function writes file
 // added a time stamp so that it doesn't keep overwriting the same logo.svg file name
 function writeToFile(fileName, data) {
-  const uniqueFileName = `examples/logo${Date.now()}.svg`;
+  const uniqueFileName = `examples/logo_${Date.now()}.svg`;
   fs.writeFile(uniqueFileName, data, (err) =>
     err ? console.error(err) : console.log("Success! Generated logo.svg")
   );
