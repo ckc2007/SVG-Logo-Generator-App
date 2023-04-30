@@ -39,7 +39,7 @@ function writeToFile(fileName, data) {
 }
 // function to initialize app
 function init() {
-  inquirer.createPromptModule(questions).then((data) => {
+  inquirer.prompt(questions).then((data) => {
     const filledTemplate = generateTemplate(data);
 
     const fileName = `examples/log.svg`;
