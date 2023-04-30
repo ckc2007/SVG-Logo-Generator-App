@@ -30,3 +30,10 @@ const questions = [
       "what color do you want the shape to be (please enter a color keyword or a hexadecimal number):",
   },
 ];
+
+// function writes file
+function writeToFIle(fileName, data) {
+  fs.writeFile(fileName, data, (err) =>
+    err ? console.error(err) : console.log("Success! Generated logo.svg")
+  );
+}
