@@ -32,8 +32,20 @@ const questions = [
 ];
 
 // function writes file
-function writeToFIle(fileName, data) {
+function writeToFile(fileName, data) {
   fs.writeFile(fileName, data, (err) =>
     err ? console.error(err) : console.log("Success! Generated logo.svg")
   );
 }
+// function to initialize app
+function init() {
+  inquirer.createPromptModule(questions).then((data) => {
+    const filledTemplate = generateTemplate(data);
+
+    const fileName = `examples/log.svg`;
+    writeToFile(fileName, filledTemplate, (err) =>
+      err ? console.error(err) : console.log("Success! Generated logo.svg")
+    );
+  });
+}
+
