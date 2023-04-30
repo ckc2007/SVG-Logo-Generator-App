@@ -6,13 +6,13 @@ function generateTemplate(data) {
   let shape;
   switch (data.shape) {
     case "\u26AA Circle":
-      shape = new Circle();
+      shape = new Circle(data.shapeColor);
       break;
     case "\u25B3 Triangle":
-      shape = new Triangle();
+      shape = new Triangle(data.shapeColor);
       break;
     case "\u25A1 Square":
-      shape = new Square();
+      shape = new Square(data.shapeColor);
       break;
     default:
       throw new Error("Invalid shape selected");
