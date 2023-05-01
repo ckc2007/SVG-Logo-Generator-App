@@ -48,11 +48,21 @@ This project is licensed under the MIT license.
 
 ## Features
 
-- uses inquirer to gather user input. - uses jest testing suite. - outputs an svg logo file
+- uses inquirer to gather user input. 
+- uses jest testing suite. 
+- outputs a .svg logo file.
 
 ## Tests
 
 tests are located in lib/tests. Please run 'npx jest' to run all tests. The test config is located in the main directory in jest.config.js
+
+## Future Features
+
+- add more shapes to choose from, or a customizable shape input parameter
+- error handling for word-based color inputs
+- expand color options
+- add word-based animation prompts and animations
+- add more style options (shadow, orientation, tilt)
 
 ## Questions
 
