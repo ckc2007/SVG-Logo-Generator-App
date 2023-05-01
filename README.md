@@ -25,7 +25,7 @@ Generate an SVG logo file with command-line prompts!
 
 ## Usage
 
-When the user runs the command node index, they will be prompted in the command line with a series of questions asking for three characters of text, text color, a shape, and the color of the shape. When these questions have been answered, an svg file will be created displaying the selected choices as a logo.
+When the user runs the command 'node index', they will be prompted in the command line with a series of questions asking for three characters of text, text color, a shape, and the color of the shape. When these questions have been answered, a .svg file will be created displaying the selected choices as a logo.
 
 ## Screenshot / Video
 
